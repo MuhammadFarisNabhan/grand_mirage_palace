@@ -1,0 +1,67 @@
+/* .product{
+    margin: 15px 32px;
+} */
+
+.frame{    
+    margin: 70px 50px;
+    height: auto;
+    object-fit: cover;    
+}
+
+.frame .desc{
+    margin: 100px 45px;
+    color: #fff;
+}
+
+.standar .frame {    
+    color: #fff;
+    display: flex;
+    flex-direction: row;    
+}
+
+.deluxe .frame{
+    color: 000;
+    display: flex;
+    flex-direction: row;    
+}
+
+.executive .frame{
+    color: #000;
+    display: flex;
+    flex-direction: row;
+}
+
+.frame img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.standar .frame .desc h4{
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.standar .frame .desc p {
+    font-size: 1.2rem;
+    text-align: end;
+}
+
+.deluxe .frame .desc h4{
+    font-size: 2.5rem;
+    text-align: start;
+}
+
+.deluxe .frame .desc p{
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+.executive .frame .desc h4{
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.executive .frame .desc p{
+    font-size: 1.2rem;
+    text-align: end;
+}

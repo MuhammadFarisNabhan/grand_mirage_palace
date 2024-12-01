@@ -1,0 +1,187 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url('./img/hotel.jpg');  
+    background-size: auto;
+    background-position: top left;
+    background-color: white;
+    /* filter: brightness(30%);     */
+}
+
+header {
+    color: rgb(92, 222, 60);
+    padding: 20px;
+    display: flex;    
+    padding: 30px 0 0 0;
+    z-index: 3;
+}
+
+header .logo{
+    font-weight:bolder;
+}
+
+.menu_header {
+    background-color: #0e727f;
+    height: 100px;    
+}
+
+nav .menu {
+    display: flex;
+    gap: 15;
+    float: right;
+    font-size: 1rem;
+}
+
+nav.menu a:hover{    
+    color: rgb(215, 212, 26);
+    transition: all 0.9 ease-in-out;
+}
+
+nav.menu a{
+    color: #fff;    
+    font-size: 1rem;
+    padding: 20px 20px 0;
+    justify-items: end;
+    position: relative;
+}
+
+
+/* MAIN */
+.box {
+    background-color: rgb(241, 227, 215);
+    /* border: 1px solid black; */
+    box-shadow: 10px 17px black;
+    border-radius: 13px;
+    margin: 20px auto 0;
+    padding: 40px 40px;
+    width: 600px;
+    height: 700px;
+}
+
+.box h4.sub_title{
+    text-align: center;
+    margin: 0 0 30px;
+    font-weight: 700;
+
+}
+
+.box .form_pesanan label{
+    margin: 20px 0 0;
+    font-weight: 700;
+}
+
+.box .form_pesanan input{
+    margin: 0 0 0 15px;
+}
+
+.box .form_pesanan input[name="nama"]{
+    width: 300px;
+    margin: 0 0 0 33px;
+}
+
+.box .form_pesanan input[type="radio"]{
+    margin: 0 0 0 59px;
+}
+
+.box .form_pesanan input[name="no_identitas"]{
+    width: 300px;
+    margin: 0 0 0 50px;
+}
+
+.box .form_pesanan select[name="tipe_kamar"]{
+    margin: 0 0 0 63px;
+    width: 300px;
+    padding: 2px;
+}
+
+.box .form_pesanan input[name="harga"]{
+    margin: 0 0 0 100px;
+    width: 100px;
+}
+
+.box .form_pesanan input[name="tgl"]{
+    margin: 0 0 0 42px;
+}
+
+.box .form_pesanan input[name="durasi"]{
+    margin: 0 0 0 20px;
+    width: 300px;
+}
+
+.box .form_pesanan input[name="total"]{
+    margin: 0 0 0 65px;
+    width: 300px;
+}
+
+.box .btn2{
+    margin: 40px 0 10px 0;
+}
+
+.box .btn2 button[name='total']:hover{
+    border: 3px solid #0d6efd;
+    background-color: white;
+    color: #0d6efd;
+    /* font-weight: 700; */
+    transition:all 0.4s ease-in-out;
+}
+
+.box .btn2 button[name='simpan']:hover{
+    border: 3px solid #198754;
+    background-color: white;
+    color: #198754;
+    /* font-weight: 700; */
+    transition:all 0.4s ease-in-out;
+}
+
+.box .btn2 button[name='cancel']:hover{
+    border: 3px solid #dc3545;
+    background-color: white;
+    color: #dc3545;
+    /* font-weight: 700; */
+    transition:all 0.4s ease-in-out;
+}
+
+.box .btn2 button[name='total'],
+.box .btn2 button[name='simpan'],
+.box .btn2 button[name='cancel']{
+    padding: 15px 23px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 3px solid;
+    border-radius: 13px;
+}
+
+.box .btn2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* DAFTAR HARGA */
+.box table .head_column{
+    font-weight: 700;
+}
+
+.box .desc_tentang_kami{
+    font-size: 1.2rem;
+}
+
+.alert {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+  transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),
+              transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.alert.show {
+  opacity: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
